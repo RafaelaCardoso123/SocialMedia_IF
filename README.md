@@ -11,12 +11,19 @@ compartilhamentos, entre outros. Seu objetivo principal é ligar pessoas. Você 
 No aplicativo você pode:
 
 Fazer seu cadastro.
+
 Fazer login.
+
 Adicionar amigos.
+
 Faça suas publicações.
+
 Comentar.
+
 Fazer ligações.
+
 Ver postagens de amigos
+
 Sair e entrar quando quiser
 
 ![image](https://user-images.githubusercontent.com/112567643/207685975-89c960a2-f47b-4f90-94a3-0cc54f4d7a33.png)
