@@ -6,7 +6,7 @@ public abstract class chat {
     private int qtd_notificacao;
 
 
-    public abstract void msg(String Texto, String nome);
+    public abstract void msg(String nome, String Texto);
 
     public abstract void ligacao(String nome);
 

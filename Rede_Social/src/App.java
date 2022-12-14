@@ -31,7 +31,7 @@ public class App {
         int escolha = 0; 
 
         
-        while (escolha  != 7){
+        while (escolha  != 11){
         System.out.print("\n Digite: \n 1 - Cadastrar \n 2- Logar \n 3 - Publicar foto \n 4 - Publicar texto \n 5 - Publicar propaganda \n 6 - Comentar uma publicação de outro usuário \n 7 - Enviar mensagem \n 8 - Fazer Ligação \n 9 - Enviar foto \n 10 - Enviar vídeo \n 11 - Sair \n: ");
         escolha= sc.nextInt();
 
@@ -167,10 +167,11 @@ public class App {
             sc.nextLine();
             System.out.print("Qual o nome do contato? ");
             nome = sc.nextLine();
+
             System.out.print("Escreva a mensagem para o usuário: ");
             Texto = sc.nextLine();
 
-            MSG.msg(Texto,nome);
+            MSG.msg(nome, Texto);
             
         
             }
@@ -202,7 +203,7 @@ public class App {
             link = sc.nextLine();
 
             vd.video(nome, link);
-        
+    
             }
         else if (escolha == 11){
             System.exit(0);

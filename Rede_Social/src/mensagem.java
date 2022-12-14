@@ -7,7 +7,7 @@ public class mensagem extends chat{
     
 
     @Override 
-    public void msg(String Texto, String nome){
+    public void msg(String nome, String Texto){
 
 
         setNome_contato(nome);
