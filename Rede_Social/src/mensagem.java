@@ -1,23 +1,37 @@
-import java.util.Date;
 
-public class mensagem {
-    private String texto;
+
+public class mensagem extends chat{
+    private String Texto;
+    private String nome_contato;
+
+    
+
+    @Override 
+    public void msg(String Texto, String nome){
+
+
+        setNome_contato(nome);
+        setMensagem(Texto);
+        System.out.print("\nSua mensagem é: "+ getMensagem()+"\nVocê enviou para: "+getNome_contato()+"\n");
+
+    }
+
+    public String getNome_contato() {
+        return this.nome_contato;
+    }
+
+    public void setNome_contato(String nome_contato) {
+        this.nome_contato = nome_contato;
+    }
 
     public String getTexto() {
-        return this.texto;
+        return this.Texto;
     }
 
-    public void setTexto(String texto) {
-        this.texto = texto;
+    public void setTexto(String Texto) {
+        this.Texto = Texto;
     }
 
-    public Date getHorario() {
-        return this.horario;
-    }
 
-    public void setHorario(Date horario) {
-        this.horario = horario;
-    }
-    private Date horario;
 
 }

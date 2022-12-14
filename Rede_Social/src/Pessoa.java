@@ -11,6 +11,18 @@ public abstract class Pessoa {
 
    public abstract void cadastrar(String nome, String email, String genero);
 
+   public abstract void logar(String nome, String email);
+
+   public abstract void Pub_Foto(String URI, String Formato);
+
+   public abstract void Pub_Texto(String Texto);
+
+   public abstract void Pub_Prop(String patrocinio, String Publico_Alvo);
+
+   public abstract void comentar(String Texto);
+
+   
+
 
 
 

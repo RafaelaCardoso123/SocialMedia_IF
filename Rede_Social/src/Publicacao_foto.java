@@ -1,7 +1,22 @@
-public class Publicacao_foto {
+public class Publicacao_foto extends Pessoa{
     private String URI;
     private String Formato;
-    private Double Data_Pub;
+    
+
+    @Override
+    public void Pub_Foto(String URI, String Formato){
+
+        setURI(URI);
+        System.out.print("\n \nO URI da foto é: "+ getURI());
+        setFormato(Formato);
+        System.out.print("\nO formato da foto é: "+ getFormato());
+
+        System.out.print("\nPublicação feita\n");
+
+
+    }
+
+    
 
     public String getURI() {
         return this.URI;
@@ -19,11 +34,4 @@ public class Publicacao_foto {
         this.Formato = Formato;
     }
 
-    public Double getData_Pub() {
-        return this.Data_Pub;
-    }
-
-    public void setData_Pub(Double Data_Pub) {
-        this.Data_Pub = Data_Pub;
-    }
 }
