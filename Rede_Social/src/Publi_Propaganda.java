@@ -1,7 +1,19 @@
-public class Publi_Propaganda {
-   private String Publico_Alvo;
+public class Publi_Propaganda extends Pessoa{
    private String Patrocinio;
-   private Double Data_pub;
+   private String Publico_Alvo;
+
+   @Override
+   public void Pub_Prop(String patrocinio, String Publico_Alvo){
+
+    setPatrocinio(patrocinio);
+    System.out.print("\nOs patrocinadores são: "+ getPatrocinio());
+    setPublico_Alvo(Publico_Alvo);
+    System.out.print("\nO público alvo  é: "+ getPublico_Alvo());
+
+    System.out.print("\nPublicação feita\n");
+
+   }
+   
 
 
 
@@ -21,11 +33,4 @@ public class Publi_Propaganda {
         this.Patrocinio = Patrocinio;
     }
 
-    public Double getData_pub() {
-        return this.Data_pub;
-    }
-
-    public void setData_pub(Double Data_pub) {
-        this.Data_pub = Data_pub;
-    }
 }

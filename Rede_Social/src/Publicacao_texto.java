@@ -1,16 +1,17 @@
-public class Publicacao_texto {
-    private String Fonte;
+public class Publicacao_texto extends Pessoa{
     private String texto;
-    private Double instante;
 
+    @Override
+    public void Pub_Texto(String Texto){
 
-    public String getFonte() {
-        return this.Fonte;
+        setTexto(Texto);
+        System.out.print("\nO texto escrito é: "+ getTexto());
+        
+
+        System.out.print("\nPublicação feita\n");
+
     }
-
-    public void setFonte(String Fonte) {
-        this.Fonte = Fonte;
-    }
+        
 
     public String getTexto() {
         return this.texto;
@@ -20,12 +21,5 @@ public class Publicacao_texto {
         this.texto = texto;
     }
 
-    public Double getInstante() {
-        return this.instante;
-    }
-
-    public void setInstante(Double instante) {
-        this.instante = instante;
-    }
 
 }

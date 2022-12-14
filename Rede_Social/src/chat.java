@@ -1,9 +1,19 @@
-public class chat {
+public abstract class chat {
 
     private int qtd_contatos;
     private int qtd_de_msg_arq;
-    private int qtd_msg;
+    private String mensagem;
     private int qtd_notificacao;
+
+
+    public abstract void msg(String nome, String Texto);
+
+    public abstract void ligacao(String nome);
+
+    public abstract void foto(String nome, String URI);
+
+    public abstract void video(String nome, String link);
+
 
 
     public int getQtd_contatos() {
@@ -22,12 +32,12 @@ public class chat {
         this.qtd_de_msg_arq = qtd_de_msg_arq;
     }
 
-    public int getQtd_msg() {
-        return this.qtd_msg;
+    public String getMensagem() {
+        return this.mensagem;
     }
 
-    public void setQtd_msg(int qtd_msg) {
-        this.qtd_msg = qtd_msg;
+    public void setMensagem(String mensagem) {
+        this.mensagem = mensagem;
     }
 
     public int getQtd_notificacao() {
@@ -37,5 +47,6 @@ public class chat {
     public void setQtd_notificacao(int qtd_notificacao) {
         this.qtd_notificacao = qtd_notificacao;
     }
+    
 }
     
