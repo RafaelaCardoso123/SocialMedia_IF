@@ -20,7 +20,11 @@ Faça suas publicações.
 
 Comentar.
 
+Enviar mensagens 
+
 Fazer ligações.
+
+Enviar fotos e Vídeos
 
 Ver postagens de amigos
 
